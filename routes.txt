@@ -1,0 +1,4 @@
+/
+/fout
+/foit
+/variable

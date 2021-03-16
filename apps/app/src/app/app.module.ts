@@ -14,7 +14,7 @@ import { VariableModule } from './pages/variable/variable.module';
     AppRoutingModule,
     FoutModule,
     VariableModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     FooterModule,
     HeaderModule
   ],
