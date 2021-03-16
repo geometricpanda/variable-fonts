@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Roboto-variable';
+  font-weight: 100 900;
+  font-stretch: 100% 151%;
+  src: url("/assets/Roboto-Flex.woff2") format('woff2 supports variations'),
+  url("/assets/Roboto-Flex.woff2") format('woff2-variations');
+}
+
+
+h1, h2, p {
+  font-family: 'Roboto-variable';
+  line-height: 1.2rem;
+}
+
+.thin {
+  font-weight: 100;
+
+  em {
+    font-stretch: 130%;
+  }
+
+  strong {
+    font-weight: 300;
+  }
+}
+
+.light {
+  font-weight: 300;
+
+  em {
+    font-stretch: 130%;
+  }
+
+  strong {
+    font-weight: 400;
+  }
+}
+
+.regular {
+  font-weight: 400;
+
+  em {
+    font-stretch: 130%;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+.medium {
+  font-weight: 500;
+
+  em {
+    font-stretch: 115%;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+.bold {
+  font-weight: 700;
+
+  em {
+    font-stretch: 115%;
+  }
+
+  strong {
+    font-weight: 900;
+  }
+
+}
+
+em {
+  font-variation-settings: 'slnt' -10, 'GRAD' -0.5;
+}

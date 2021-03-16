@@ -36,7 +36,7 @@
       "projectType": "application",
       "root": "apps/app",
       "sourceRoot": "apps/app/src",
-      "prefix": "variable-fonts",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

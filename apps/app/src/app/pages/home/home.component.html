@@ -1,0 +1,149 @@
+<div class='bg-primary text-light p-3 mb-4'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-12 col-md-11 col-lg-9'>
+        <h1 class='display-3'>
+          Variable Fonts
+        </h1>
+
+        <p class='lead'>
+          Welcome to an experiment in variable font loading.
+        </p>
+
+        <p>
+          The purpose of this app is to demonstrate problems with traditional fonts,
+          and to discuss variable fonts, showing where they work well - and how to
+          compensate for when they dont.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-12 col-md-10 col-lg-9'>
+      <h2 class='mb-3'>Setup</h2>
+      <p>
+        When viewing these pages, it's advised that you use a Chromium browser such
+        as Google Chrome or Microsoft Edge.
+      </p>
+
+      <p class='mb-5'>
+        To see the problems discussed with maximum impact, please enable
+        <a href='https://css-tricks.com/throttling-the-network/' target='_blank'>
+          Throttling
+        </a>, tick the "disable cache" button and remember to refresh the browser
+        for subsequent visits to each page.
+      </p>
+
+      <h2 class='mb-3'>What is a variable font?</h2>
+      <p>
+        Unlike traditional fonts, a variable font is configured using vectors in
+        such a way as it can be customised in the browser.
+      </p>
+
+      <p>
+        In traditional fonts, should you want to define font weights or italics
+        you need to define them in the browser and alias them to the same font name,
+        when that font is used it then loads in.
+      </p>
+
+      <p>
+        There are a few things that are less than ideal with this method, firstly
+        what do you show before the font has loaded in?
+      </p>
+
+      <p class='mb-5'>
+        There are a couple of options here including Flash of Unstyled Text (FOUT),
+        Flash of Invisible Text (FOIT) and Flash of Faux Text (FOFT).
+      </p>
+
+      <h3 class='mb-3'>Problems with FOUT</h3>
+
+      <p>
+        A Flash of Unstyled Text doesn't necessarily mean that the text has no style,
+        however it means that it'll show a fallback font and then swap out when the
+        time is right to the correct font.
+      </p>
+
+      <ul class='mb-5'>
+        <li>
+          Firstly this can cause a reflow as the fallback font may not be the same
+          size as your desired font.
+        </li>
+        <li>
+          When loading additional font weights this can cause additional reflows,
+          even though we can use FOFT to mitigate this.
+        </li>
+        <li>
+          For areas not using FOFT, text will update at different times.
+        </li>
+        <li>
+          It's a lot of data for the client to download.
+        </li>
+      </ul>
+
+
+      <h3 class='mb-3'>Problems with FOUT</h3>
+
+      <p>
+        A Flash of Invisible Text means that the browser will reserve the space
+        that it think it'll need (based on a fallback font) until the desired
+        font has loaded.
+      </p>
+
+      <p>
+        This compounds the issues with FOIT, with the undesirable experience
+        of white space, and having to manage what happens when the desired
+        font fails to load.
+      </p>
+
+      <ul class='mb-5'>
+        <li>
+          Text doesnt show until the font has loaded.
+        </li>
+        <li>
+          FOFT doesn't apply in this situation.
+        </li>
+        <li>
+          You have to configure how the browser handles failures to load.
+        </li>
+      </ul>
+
+
+      <h3 class='mb-3'>Problems with FOFT</h3>
+
+      <p>
+        A Flash of Faux Text is a relatively new idea in which we let the browser
+        load the roman (not italic, regular weight) version of the custom font,
+        and let the browser approximate the weight / italic slant until it's loaded
+        the real font in.
+      </p>
+
+      <ul class='mb-5'>
+        <li>
+          This doesnt work everywhere, and requires some mental gymnastics to work.
+        </li>
+        <li>
+          Still has the problems of FOUT, yet they're not quite as extreme.
+        </li>
+      </ul>
+
+      <h2>Variable Fonts</h2>
+
+      <p>
+        Whilst not the perfect solution, because a variable font exists in a configurable
+        format, you only need to download it once, this doesnt solve the problems of FOIT
+        or FOUT, however it does mean you can eliminate the need for FOFT.
+      </p>
+
+      <ul>
+        <li>Modern Browser Only (sorry IE11)</li>
+        <li>Fonts must be built as variable fonts</li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
