@@ -2,7 +2,8 @@
   font-family: 'Roboto-variable';
   font-weight: 100 1000;
   font-stretch: 75% 100%;
-  src: url("/assets/roboto/variable_fonts/RobotoFlex[slnt,wdth,wght,opsz].ttf");
+  src: url("/assets/roboto/variable_fonts/Roboto-Flex.woff2") format('woff2-variations'),
+       url("/assets/roboto/variable_fonts/RobotoFlex[slnt,wdth,wght,opsz].ttf")
 }
 
 :host {
