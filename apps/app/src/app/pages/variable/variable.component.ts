@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-variable',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VariableComponent implements OnInit {
 
-  constructor() { }
+  constructor(private title: Title) { }
 
   ngOnInit(): void {
+    this.title.setTitle('Variable Font Example - Variable Font Experiment');
   }
 
 }
