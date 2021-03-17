@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Roboto-variable';
+  font-weight: 100 1000;
+  font-stretch: 75% 100%;
+  src: url("/assets/roboto/variable_fonts/Roboto-Flex.woff2") format('woff2-variations'),
+       url("/assets/roboto/variable_fonts/RobotoFlex[slnt,wdth,wght,opsz].ttf")
+}
+
+@font-face {
+  font-family: 'Roboto-fallback';
+  font-weight: 400;
+  src: url("/assets/roboto/webfonts/Roboto-Regular.ttf");
+}
+
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-variable',
@@ -13,5 +14,6 @@ export class VariableComponent implements OnInit {
   ngOnInit(): void {
     this.title.setTitle('Variable Font Example - Variable Font Experiment');
   }
+
 
 }

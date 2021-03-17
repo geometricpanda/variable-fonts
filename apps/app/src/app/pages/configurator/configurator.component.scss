@@ -1,0 +1,39 @@
+
+:host {
+  --font-size: 1rem;
+  --line-height: 1.25rem;
+  --letter-spacing: 0;
+
+  --font-wght: 400;
+  --font-wdth: 100;
+  --font-opsz: 16;
+  --font-slnt: 0;
+  --font-GRAD: 0;
+  --font-XTRA: 468;
+  --font-XOPQ: 96;
+  --font-YOPQ: 79;
+  --font-YTCL: 514;
+  --font-YTUC: 712;
+  --font-YTAS: 750;
+  --font-YTDE: -203;
+}
+
+
+.configurator {
+  border-left: 5px solid #FFF;
+  padding-left: 1em;
+
+  font-family: "Roboto-variable";
+  font-variation-settings: "wght" var(--font-wght),
+                           "wdth" var(--font-wdth),
+                           "opsz" var(--font-opsz),
+                           "slnt" var(--font-slnt),
+                           "GRAD" var(--font-GRAD),
+                           "XTRA" var(--font-XTRA),
+                           "XOPQ" var(--font-XOPQ),
+                           "YOPQ" var(--font-YOPQ),
+                           "YTLC" var(--font-YTCL),
+                           "YTUC" var(--font-YTUC),
+                           "YTAS" var(--font-YTAS),
+                           "YTDE" var(--font-YTDE);
+}

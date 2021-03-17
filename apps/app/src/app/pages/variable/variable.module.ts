@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { VariableRoutingModule } from './variable-routing.module';
 import { VariableComponent } from './variable.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [VariableComponent],
   imports: [
     CommonModule,
-    VariableRoutingModule
+    VariableRoutingModule,
   ],
   exports: [VariableComponent]
 })

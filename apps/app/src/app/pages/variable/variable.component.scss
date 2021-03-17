@@ -1,22 +1,17 @@
-@font-face {
-  font-family: 'Roboto-variable';
-  font-weight: 100 1000;
-  font-stretch: 75% 100%;
-  src: url("/assets/roboto/variable_fonts/Roboto-Flex.woff2") format('woff2-variations'),
-       url("/assets/roboto/variable_fonts/RobotoFlex[slnt,wdth,wght,opsz].ttf")
-}
-
 :host {
   --font-slnt: 0;
   --font-wdth: 100;
   --font-wght: 100;
 }
 
-
 h1, h2, p, em, strong {
-  font-family: "Roboto-variable";
-  font-style: normal;
-  font-variation-settings: "wght" var(--font-wght), "wdth" var(--font-wdth), "slnt" var(--font-slnt);
+  font-family: 'Roboto-fallback';
+
+  @supports (font-variation-settings: normal) {
+    font-family: "Roboto-variable";
+    font-style: normal;
+    font-variation-settings: "wght" var(--font-wght), "wdth" var(--font-wdth), "slnt" var(--font-slnt);
+  }
 }
 
 p {
@@ -25,66 +20,130 @@ p {
 }
 
 .thin {
+  font-weight: 100;
   --font-wght: 100;
 
   em {
+    font-style: italic;
+
+    @supports (font-variation-settings: normal) {
+      font-style: normal;
+    }
+
     --font-slnt: -10;
     --font-wdth: 130;
   }
 
   strong {
+    font-weight: 300;
+
+    @supports (font-variation-settings: normal) {
+      font-weight: normal;
+    }
+
     --font-wght: 300;
   }
 }
 
 .light {
+  font-weight: 300;
   --font-wght: 300;
 
   em {
+    font-style: italic;
+
+    @supports (font-variation-settings: normal) {
+      font-style: normal;
+    }
+
     --font-slnt: -10;
     --font-wdth: 130;
   }
 
   strong {
+    font-weight: 400;
+
+    @supports (font-variation-settings: normal) {
+      font-weight: normal;
+    }
+
     --font-wght: 500;
   }
 }
 
 .regular {
+  font-weight: 400;
   --font-wght: 400;
 
   em {
+    font-style: italic;
+
+    @supports (font-variation-settings: normal) {
+      font-style: normal;
+    }
+
     --font-slnt: -10;
     --font-wdth: 120;
   }
 
   strong {
+    font-weight: 500;
+
+    @supports (font-variation-settings: normal) {
+      font-weight: normal;
+    }
+
     --font-wght: 600;
   }
 }
 
 .medium {
+  font-weight: 500;
   --font-wght: 500;
 
   em {
+    font-style: italic;
+
+    @supports (font-variation-settings: normal) {
+      font-style: normal;
+    }
+
     --font-slnt: -10;
     --font-wdth: 120;
   }
 
   strong {
+    font-weight: 700;
+
+    @supports (font-variation-settings: normal) {
+      font-weight: normal;
+    }
+
     --font-wght: 700;
   }
 }
 
 .bold {
+  font-weight: 700;
   --font-wght: 700;
 
   em {
+    font-style: italic;
+
+    @supports (font-variation-settings: normal) {
+      font-style: normal;
+    }
+
     --font-slnt: -10;
     --font-wdth: 110;
   }
 
   strong {
+    font-weight: 900;
+    @supports (font-variation-settings: normal) {
+      font-weight: normal;
+    }
+
     --font-wght: 950;
   }
 }

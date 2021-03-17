@@ -1,0 +1,223 @@
+<div class='bg-primary text-light p-3 mb-4 position-sticky sticky-md-top'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-12 col-md-11 col-lg-9'>
+        <h1 class='mb-3'>Configurator</h1>
+
+        <pre>{{this.form.value | json}}</pre>
+
+        <div class='configurator'>
+          <p>
+            First it marked out a race-course, in a sort of circle, (`the exact shape doesn't matter,' it said,) and
+            then all the party were placed along the course, here and there. There was no `One, two, three, and away,'
+            but they began running when they liked, and left off when they liked, so that it was not easy to know when
+            the race was over. However, when they had been running half an hour or so, and were quite dry again, the
+            Dodo suddenly called out `The race is over!' and they all crow ded round it, panting, and asking, `But who
+            has won?'
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-12 col-md-11 col-lg-9'>
+      <h2>Options</h2>
+      <p class='mb-5'>Use the sliders below to configure the text above:</p>
+
+      <form [formGroup]='form'>
+
+        <div class='mb-1'>
+          <label for='fontSize' class='form-label'>Font Size</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontSize' type='range' class='form-range' min='10' max='100' step='1'
+                     id='fontSize'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontSize').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='lineHeight' class='form-label'>Line Height</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='lineHeight' type='range' class='form-range' min='0.5' max='5' step='0.1'
+                     id='lineHeight'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('lineHeight').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='letterSpacing' class='form-label'>Letter Spacing</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='letterSpacing' type='range' class='form-range' min='0' max='50' step='1'
+                     id='letterSpacing'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('letterSpacing').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='fontWeight' class='form-label'>Font Weight</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontWeight' type='range' class='form-range' min='100' max='1000' step='1'
+                     id='fontWeight'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontWeight').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='fontWidth' class='form-label'>Font Width</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontWidth' type='range' class='form-range' min='25' max='151' step='100' id='fontWidth'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontWidth').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='fontOpticalSize' class='form-label'>Font Optical Size</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontOpticalSize' type='range' class='form-range' min='8' max='144' step='1' id='fontOpticalSize'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontOpticalSize').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='fontGrade' class='form-label'>Font Grade</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontGrade' type='range' class='form-range' min='-1' max='1' step='0.1' id='fontGrade'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontGrade').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='fontXtra' class='form-label'>Font Horizontal TRA</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontXtra' type='range' class='form-range' min='323' max='603' step='1' id='fontXtra'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontXtra').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='fontXopq' class='form-label'>Font Horizontal OPQ</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontXopq' type='range' class='form-range' min='27' max='175' step='1' id='fontXopq'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontXopq').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='fontYopq' class='form-label'>Font Vertical OPQ</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontYopq' type='range' class='form-range' min='25' max='79' step='1' id='fontYopq'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontYopq').value}}
+            </div>
+          </div>
+        </div>
+
+
+        <div class='mb-1'>
+          <label for='fontYtlc' class='form-label'>Font Top Lowercase</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontYtlc' type='range' class='form-range' min='416' max='570' step='1' id='fontYtlc'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontYtlc').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='fontYtuc' class='form-label'>Font Top Uppercase</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontYtuc' type='range' class='form-range' min='528' max='760' step='1' id='fontYtuc'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontYtuc').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='fontYtas' class='form-label'>Font Top Ascender Scale</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontYtas' type='range' class='form-range' min='649' max='854' step='1' id='fontYtas'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontYtas').value}}
+            </div>
+          </div>
+        </div>
+
+        <div class='mb-1'>
+          <label for='fontYtde' class='form-label'>Font Bottom Descender Scale</label>
+
+          <div class='row mb-3'>
+            <div class='col-10 col-md-8'>
+              <input formControlName='fontYtde' type='range' class='form-range' min='-305' max='-98' step='1' id='fontYtde'>
+            </div>
+            <div class='col-auto'>
+              {{form.get('fontYtde').value}}
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>

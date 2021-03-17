@@ -9,24 +9,30 @@ const home: Route = {
 
 const foit: Route = {
   path: 'foit',
-  loadChildren: () => import('./pages/foit/foit.module').then(mod => mod.FoitModule),
-}
+  loadChildren: () => import('./pages/foit/foit.module').then(mod => mod.FoitModule)
+};
 
 const fout: Route = {
   path: 'fout',
-  loadChildren: () => import('./pages/fout/fout.module').then(mod => mod.FoutModule),
-}
+  loadChildren: () => import('./pages/fout/fout.module').then(mod => mod.FoutModule)
+};
 
 const variable: Route = {
   path: 'variable',
-  loadChildren: () => import('./pages/variable/variable.module').then(mod => mod.VariableModule),
-}
+  loadChildren: () => import('./pages/variable/variable.module').then(mod => mod.VariableModule)
+};
+
+const configurator: Route = {
+  path: 'configurator',
+  loadChildren: () => import('./pages/configurator/configurator.module').then(mod => mod.ConfiguratorModule)
+};
 
 const routes: Routes = [
   home,
   foit,
   fout,
-  variable
+  variable,
+  configurator,
 ];
 
 @NgModule({
