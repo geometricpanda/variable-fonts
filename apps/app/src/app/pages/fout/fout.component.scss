@@ -2,7 +2,7 @@
   font-family: 'Roboto-fout';
   font-display: swap;
   font-weight: 100;
-  src: url("/assets/Roboto-Thin.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-Thin.ttf");
 }
 
 @font-face {
@@ -10,7 +10,7 @@
   font-display: swap;
   font-weight: 100;
   font-style: italic;
-  src: url("/assets/Roboto-ThinItalic.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-ThinItalic.ttf");
 }
 
 
@@ -18,7 +18,7 @@
   font-family: 'Roboto-fout';
   font-display: swap;
   font-weight: 300;
-  src: url("/assets/Roboto-Light.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-Light.ttf");
 }
 
 @font-face {
@@ -26,7 +26,7 @@
   font-display: swap;
   font-weight: 300;
   font-style: italic;
-  src: url("/assets/Roboto-LightItalic.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-LightItalic.ttf");
 }
 
 
@@ -34,7 +34,7 @@
   font-family: 'Roboto-fout';
   font-display: swap;
   font-weight: 400;
-  src: url("/assets/Roboto-Regular.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-Regular.ttf");
 }
 
 @font-face {
@@ -42,14 +42,14 @@
   font-display: swap;
   font-weight: 400;
   font-style: italic;
-  src: url("/assets/Roboto-Italic.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-Italic.ttf");
 }
 
 @font-face {
   font-family: 'Roboto-fout';
   font-display: swap;
   font-weight: 500;
-  src: url("/assets/Roboto-Medium.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-Medium.ttf");
 }
 
 @font-face {
@@ -57,14 +57,14 @@
   font-display: swap;
   font-weight: 500;
   font-style: italic;
-  src: url("/assets/Roboto-MediumItalic.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-MediumItalic.ttf");
 }
 
 @font-face {
   font-family: 'Roboto-fout';
   font-display: swap;
   font-weight: 700;
-  src: url("/assets/Roboto-Bold.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-Bold.ttf");
 }
 
 @font-face {
@@ -72,14 +72,14 @@
   font-display: swap;
   font-weight: 700;
   font-style: italic;
-  src: url("/assets/Roboto-BoldItalic.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-BoldItalic.ttf");
 }
 
 @font-face {
   font-family: 'Roboto-fout';
   font-display: swap;
   font-weight: 900;
-  src: url("/assets/Roboto-Black.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-Black.ttf");
 }
 
 @font-face {
@@ -87,13 +87,21 @@
   font-display: swap;
   font-weight: 900;
   font-style: italic;
-  src: url("/assets/Roboto-BlackItalic.ttf");
+  src: url("/assets/roboto/webfonts/Roboto-BlackItalic.ttf");
 }
 
 
-h1, h2, p {
-  font-family: 'Roboto-fout';
-  line-height: 1.2rem;
+h1, h2 {
+  font-weight: 100;
+}
+
+h1, h2, p, em, strong {
+  font-family: "Roboto-fout";
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 
 .thin {

@@ -1,78 +1,89 @@
 @font-face {
   font-family: 'Roboto-variable';
-  font-weight: 100 900;
-  font-stretch: 100% 151%;
-  src: url("/assets/Roboto-Flex.woff2") format('woff2 supports variations'),
-  url("/assets/Roboto-Flex.woff2") format('woff2-variations');
+  font-weight: 100 1000;
+  font-stretch: 75% 100%;
+  src: url("/assets/roboto/variable_fonts/RobotoFlex[slnt,wdth,wght,opsz].ttf");
+}
+
+:host {
+  --font-slnt: 0;
+  --font-wdth: 100;
+  --font-wght: 100;
 }
 
 
-h1, h2, p {
-  font-family: 'Roboto-variable';
-  line-height: 1.2rem;
+h1, h2, p, em, strong {
+  font-family: "Roboto-variable";
+  font-style: normal;
+  font-variation-settings: "wght" var(--font-wght), "wdth" var(--font-wdth), "slnt" var(--font-slnt);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 
 .thin {
-  font-weight: 100;
+  --font-wght: 100;
 
   em {
-    font-stretch: 130%;
+    --font-slnt: -10;
+    --font-wdth: 130;
   }
 
   strong {
-    font-weight: 300;
+    --font-wght: 300;
   }
 }
 
 .light {
-  font-weight: 300;
+  --font-wght: 300;
 
   em {
-    font-stretch: 130%;
+    --font-slnt: -10;
+    --font-wdth: 130;
   }
 
   strong {
-    font-weight: 400;
+    --font-wght: 500;
   }
 }
 
 .regular {
-  font-weight: 400;
+  --font-wght: 400;
 
   em {
-    font-stretch: 130%;
+    --font-slnt: -10;
+    --font-wdth: 120;
   }
 
   strong {
-    font-weight: 500;
+    --font-wght: 600;
   }
 }
 
 .medium {
-  font-weight: 500;
+  --font-wght: 500;
 
   em {
-    font-stretch: 115%;
+    --font-slnt: -10;
+    --font-wdth: 120;
   }
 
   strong {
-    font-weight: 700;
+    --font-wght: 700;
   }
 }
 
 .bold {
-  font-weight: 700;
+  --font-wght: 700;
 
   em {
-    font-stretch: 115%;
+    --font-slnt: -10;
+    --font-wdth: 110;
   }
 
   strong {
-    font-weight: 900;
+    --font-wght: 950;
   }
-
-}
-
-em {
-  font-variation-settings: 'slnt' -10, 'GRAD' -0.5;
 }
